@@ -1,18 +1,20 @@
-# Twitter Sentiment Analysis
-__________________________________________________________________________________________________________________________________
+# SXSW - Twitter Sentiment Analysis
+
 Author: Simran Kaur
 
-![title](images/twitter_logo.jpeg)
+![title](images/sxsw_logo.jpeg)
 
 ## Problem
 
-Twitter's CEO, Elon Musk, wants to add emojis, users can click, as responses to tweets. Currently there are no emojis available, only the option to "heart" a tweet. He wants to understand the overall sentiments of tweets users share, to determine which emojis would be best to add.
+South by Southwest ("SXSW") is a world premier event that showcases new music, films and interactive media. It takes place in Austin, Texas every year.
 
-This analysis will use Natural Language Processing ("NLP") to understand overall tweet sentiment.
+Festival directors have reached out to see what improvements can be made from this year's festival so that it can be improved for next year.
+
+This analysis will use Natural Language Processing ("NLP") to develop models that can determine Twitter tweet sentiments. Tweets from this year's festival will be used to observe sentiment.
 
 ## Data
 
-Data was taken from [data.world](https://data.world/crowdflower/brands-and-product-emotions). It contains over 9,000 different tweets with the device it was shared from as well as if there is a positive, negative or neutral emotion to the tweet.
+Data was taken from [data.world](https://data.world/crowdflower/brands-and-product-emotions). It contains approximately 4,600  tweets, with the festival hashtag, with the device it was shared from as well as if there is a positive, negative or neutral emotion to the tweet.
 
 ## Methods
 
@@ -29,25 +31,27 @@ Five different model versions were ran, which included four different types of m
 
 ## Results
 
-Accuracy and F1 score were used to compare the original four models ran. Accuracy is the best performance metric in this business case as it is the percentage of correct predictions for the test data. The original random forest classifier had the highest accuracy, at 68.8%. 
+Accuracy and F1 score were used to compare the original four models ran. Accuracy is the best performance metric in this business case as it is the percentage of correct predictions for the test data. The original random forest classifier had the highest accuracy, at 65.4%. 
 
 ## Suggestions
 
-1. Twitter should implement a thumbs up and a thumbs down emoji as responses to tweets. These are basic emojis that people are very likely to use. 
-2. Twitter should also keep their heart emoji as it has been around for a long time and users are familiar with it. Familiarity is directly tied to comfort. 
+ 
 
 ## Next Steps
 
-The final model yielded an accuracy if 68.8%, which is a number that can possibly be better. Some ideas to better performance are as follows:
-* Running the analysis with a different population of tweets and narrowing down the number of neutral tweets in the population. 
-* Factoring in major events that may be taking place. Tweets tend to focus on events and as seen above, the data was surrounded around SXSW. 
-* Tagging an initial emotion to the tweet should be done by a few people. This will allow the tagged emotion to be more likely correct. 
+
 
 ## Further Information
 
+See the full analysis in the [Jupyter Notebook](https://github.com/simrank3/phase-4-project/blob/main/notebook.ipynb) or review the [presentation](https://github.com/simrank3/phase-4-project/blob/main/presentation.pdf).
+
+For additional information, contact Simran Kaur at simran.kaur@flatironschool.com
+
+
 ## Repository Structure
+```
 ├── images
-│   ├── twitter_logo.jpeg
+│   ├── twitter_logo.jpeg.jpeg
 ├── notebook.ipynb
 ├── presentation.pdf
 ├── README.md
