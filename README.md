@@ -1,4 +1,4 @@
-# SXSW - Twitter Sentiment Analysis
+# SXSW Go - Twitter Sentiment Analysis
 
 Author: Simran Kaur
 
